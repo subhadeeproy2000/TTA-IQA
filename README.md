@@ -4,6 +4,8 @@ Code for Test Time Adaptation in the Context of Blind Image Quality Assessment.
 ```
 conda env create -f environment.yml
 ```
+# Datasets
+We have used mainly 6 datasets for evaluation ( [KonIQ-10k](http://database.mmsp-kn.de/koniq-10k-database.html) , [PIPAL](https://github.com/HaomingCai/PIPAL-dataset) , [CID2013](https://zenodo.org/record/2647033) , [LIVE-IQA](https://live.ece.utexas.edu/research/quality/subjective.htm) , [SPAQ](https://github.com/h4nwei/SPAQ) , [LIVEC](https://live.ece.utexas.edu/research/ChallengeDB/).
 # Run Code for Four Different Models
 TReS:
 ```
@@ -26,3 +28,6 @@ You need to write a code for developing the model. In the given demo, we write a
 ```
 python3 TTA-IQA/General TTA/tta_inference.py --run 3 --batch_size 8 --lr 0.001 --niter 3 --svpath TTA-IQA/ttt_cifar_IQA/weight/fblive_TReS --gpunum 0 --test_patch_num 1 --fix_ssh --datapath DSLR --rank --group_contrastive
 ```
+
+# Acknowledgement 
+The main code for the model TReS, MUSIQ , HyperIQA , MetaIQA is borrowed from [TReS](https://github.com/isalirezag/TReS) [MUSIQ](https://github.com/anse3832/MUSIQ) [hyperIQA](https://github.com/SSL92/hyperIQA) [MetaIQA](https://github.com/zhuhancheng/MetaIQA) respectively.
