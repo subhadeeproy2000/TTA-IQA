@@ -1,5 +1,5 @@
 # TTA-IQA
-Code for Test Time Adaptation in the Context of Blind Image Quality Assessment.
+This is the official project  repository containing the implementation Code for [Test Time Adaptation for Blind Image Quality Assessment](https://arxiv.org/pdf/2307.14735.pdf).
 # Installation 
 ```
 conda env create -f environment.yml
