@@ -2,6 +2,7 @@
 This is the official project  repository containing the implementation Code for [Test Time Adaptation for Blind Image Quality Assessment (ICCV 2023](https://arxiv.org/pdf/2307.14735.pdf) by Subhadeep Roy, Shankhanil Mitra, Soma Biswas, and Rajiv Soundararajan.  
 
 Our paper addresses the issue of the distribution shift across various image-quality databases and proposes methods to adapt the pre-trained model at test time in the absence of source data. The source model needs to be updated based on a self-supervised auxiliary task to learn the distribution shift between train and test data. We formulate novel self-supervised auxiliary tasks using the rank and group contrastive losses, which can learn quality-aware information from the test data.
+![alt text](https://github.com/subhadeeproy2000/TTA-IQA/blob/main/blocknew.png?raw=true)
 # Installation 
 ```
 conda env create -f environment.yml
