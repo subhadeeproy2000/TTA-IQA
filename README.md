@@ -9,6 +9,25 @@ conda env create -f environment.yml
 ```
 # Datasets
 We have used mainly 6 datasets for evaluation ( [KonIQ-10k](http://database.mmsp-kn.de/koniq-10k-database.html) , [PIPAL](https://github.com/HaomingCai/PIPAL-dataset) , [CID2013](https://zenodo.org/record/2647033) , [LIVE-IQA](https://live.ece.utexas.edu/research/quality/subjective.htm) , [SPAQ](https://github.com/h4nwei/SPAQ) , [LIVEC](https://live.ece.utexas.edu/research/ChallengeDB/) ).
+# Pretrained models
+To download the pretrained model, run the following python scripts  
+
+TReS:
+```
+python3 TTA-IQA/TReS/weight/download_fblive.py
+```
+MUSIQ:
+```
+python3 TTA-IQA/MUSIQ/weights/download_fblive.py
+```
+HyperIQA:
+```
+python3 TTA-IQA/hyperIQA/weight/download_fblive.py
+```
+MetaIQA:
+```
+python3 TTA-IQA/MetaIQA/model_IQA/download.py
+```
 # Run Code for Four Different Models
 TReS:
 ```
