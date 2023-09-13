@@ -53,3 +53,13 @@ python3 TTA-IQA/General TTA/tta_inference.py --run 3 --batch_size 8 --lr 0.001 -
 
 # Acknowledgement 
 The main code for the model TReS, MUSIQ , HyperIQA , MetaIQA is borrowed from [TReS](https://github.com/isalirezag/TReS), [MUSIQ](https://github.com/anse3832/MUSIQ), [hyperIQA](https://github.com/SSL92/hyperIQA), [MetaIQA](https://github.com/zhuhancheng/MetaIQA) respectively.
+
+# Citation 
+@misc{roy2023test,
+      title={Test Time Adaptation for Blind Image Quality Assessment}, 
+      author={Subhadeep Roy and Shankhanil Mitra and Soma Biswas and Rajiv Soundararajan},
+      year={2023},
+      eprint={2307.14735},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
