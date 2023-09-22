@@ -18,21 +18,15 @@ class DataLoader(object):
 
 		if (dataset == 'live') | (dataset == 'csiq') | (dataset == 'tid2013') | (dataset == 'clive')| (dataset == 'kadid10k') | (dataset == 'pipal') | (dataset == 'nnid') | (dataset == 'cidiq1'):
 				transforms = torchvision.transforms.Compose([
-					# torchvision.transforms.RandomHorizontalFlip(),
-					# torchvision.transforms.RandomVerticalFlip(),
-					torchvision.transforms.CenterCrop(size=patch_size),
-					# torchvision.transforms.RandomCrop(size=patch_size),
+					torchvision.transforms.RandomCrop(size=patch_size),
 					torchvision.transforms.ToTensor(),
 					torchvision.transforms.Normalize(mean=(0.485, 0.456, 0.406),
 													 std=(0.229, 0.224, 0.225))
 				])
 		elif dataset == 'koniq' or dataset=='cidiq':
 				transforms = torchvision.transforms.Compose([
-					# torchvision.transforms.RandomHorizontalFlip(),
-					# torchvision.transforms.RandomVerticalFlip(),
 					torchvision.transforms.Resize((512, 384)),
-					# torchvision.transforms.RandomCrop(size=patch_size),
-					torchvision.transforms.CenterCrop(size=patch_size),
+					torchvision.transforms.RandomCrop(size=patch_size),
 					torchvision.transforms.ToTensor(),
 					torchvision.transforms.Normalize(mean=(0.485, 0.456, 0.406),
 													 std=(0.229, 0.224, 0.225))
@@ -41,10 +35,7 @@ class DataLoader(object):
 
 			if istrain:
 				transforms = torchvision.transforms.Compose([
-					# torchvision.transforms.RandomHorizontalFlip(),
-					# torchvision.transforms.RandomVerticalFlip(),
-					torchvision.transforms.CenterCrop(size=patch_size),
-					# torchvision.transforms.RandomCrop(size=patch_size),
+					torchvision.transforms.RandomCrop(size=patch_size),
 					torchvision.transforms.ToTensor(),
 					torchvision.transforms.Normalize(mean=(0.485, 0.456, 0.406),
 													 std=(0.229, 0.224, 0.225))
@@ -53,18 +44,13 @@ class DataLoader(object):
 
 			if istrain:
 				transforms = torchvision.transforms.Compose([
-					# torchvision.transforms.RandomHorizontalFlip(),
-					# torchvision.transforms.RandomVerticalFlip(),
-					torchvision.transforms.CenterCrop(size=patch_size),
-					# torchvision.transforms.RandomCrop(size=patch_size),
+					torchvision.transforms.RandomCrop(size=patch_size),
 					torchvision.transforms.ToTensor(),
 					torchvision.transforms.Normalize(mean=(0.485, 0.456, 0.406),
 													 std=(0.229, 0.224, 0.225))
 				])
 		elif dataset == 'spaq':
 				transforms = torchvision.transforms.Compose([
-					# torchvision.transforms.RandomHorizontalFlip(),
-					# torchvision.transforms.RandomVerticalFlip(),
 					torchvision.transforms.Resize((512, 384)),
 					torchvision.transforms.CenterCrop(size=patch_size),
 					# torchvision.transforms.RandomCrop(size=patch_size),
