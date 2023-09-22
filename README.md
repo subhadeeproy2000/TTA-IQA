@@ -19,6 +19,7 @@ python3 TTA-IQA/TReS/weight/download_fblive.py
 MUSIQ:
 ```
 python3 TTA-IQA/MUSIQ/weights/download_fblive.py
+python3 TTA-IQA/MUSIQ/model/download_fblive_resnet.py
 ```
 HyperIQA:
 ```
