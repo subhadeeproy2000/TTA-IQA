@@ -57,12 +57,12 @@ The main code for the model TReS, MUSIQ , HyperIQA , MetaIQA is borrowed from [T
 
 # Citation 
 ```
-@misc{roy2023test,
-      title={Test Time Adaptation for Blind Image Quality Assessment}, 
-      author={Subhadeep Roy and Shankhanil Mitra and Soma Biswas and Rajiv Soundararajan},
-      year={2023},
-      eprint={2307.14735},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@InProceedings{Roy_2023_ICCV,
+    author    = {Roy, Subhadeep and Mitra, Shankhanil and Biswas, Soma and Soundararajan, Rajiv},
+    title     = {Test Time Adaptation for Blind Image Quality Assessment},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {16742-16751}
 }
 ```
